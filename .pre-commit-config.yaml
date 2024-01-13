@@ -45,4 +45,3 @@ repos:
         entry: poetry run mypy
         types: [python]
         language: system
-        always_run: true
