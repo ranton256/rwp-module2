@@ -4,11 +4,7 @@ import sys
 import streamlit as st
 
 SRC_DIR = os.path.dirname(os.path.abspath(__file__))
-print(f"SRC_DIR is {SRC_DIR}")
-
 APP_DIR = os.path.dirname(SRC_DIR)
-print(f"APP_DIR is {APP_DIR}")
-
 sys.path.append(APP_DIR)
 
 from rwp_module2.card_model import Quiz  # noqa: E402
@@ -85,12 +81,12 @@ if quiz:
         st.text(item.question)
         if not q_shown:
             if st.button(
-                f"Show Answer for Question {i}", on_click=btn_clicked, args=("show",)
+                f"Show Answer for Question {i+1}", on_click=btn_clicked, args=("show",)
             ):
                 st.write("you clicked show")
         else:
             if st.button(
-                f"Hide Answer for Question {i}", on_click=btn_clicked, args=("hide",)
+                f"Hide Answer for Question {i+1}", on_click=btn_clicked, args=("hide",)
             ):
                 st.write("you clicked hide")
 

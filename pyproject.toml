@@ -6,7 +6,7 @@ authors = ["Richard Anton <ranton@ranton.org>"]
 readme = "README.md"
 
 [tool.poetry.dependencies]
-python = "^3.12"
+python = "^3.11"
 urllib3 = "^2.1.0"
 beautifulsoup4 = "^4.12.2"
 streamlit = "^1.30.0"
@@ -28,6 +28,11 @@ mypy = "^1.8.0"
 pre-commit = "^3.6.0"
 poetry-plugin-export = "^1.6.0"
 watchdog = "^3.0.0"
+
+
+[tool.poetry.scripts]
+streamlit = "rwp_module2.run:start"
+
 
 [build-system]
 requires = ["poetry-core"]
