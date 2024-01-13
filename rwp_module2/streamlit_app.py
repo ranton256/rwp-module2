@@ -1,7 +1,18 @@
+import os
+import sys
+
 import streamlit as st
 
-from rwp_module2.card_model import Quiz
-from rwp_module2.cli_cards import load_flashcards
+SRC_DIR = os.path.dirname(os.path.abspath(__file__))
+print(f"SRC_DIR is {SRC_DIR}")
+
+APP_DIR = os.path.dirname(SRC_DIR)
+print(f"APP_DIR is {APP_DIR}")
+
+sys.path.append(APP_DIR)
+
+from rwp_module2.card_model import Quiz  # noqa: E402
+from rwp_module2.cli_cards import load_flashcards  # noqa: E402
 
 # Streamlit app
 st.title("Flashcard Quiz App")
