@@ -1,4 +1,4 @@
-[
+{"items": [
     {
         "question": "What is the function of a transformer in an electrical circuit?",
         "answer": "A transformer is used to increase or decrease the voltage of an alternating current (AC). It operates on the principle of electromagnetic induction and consists of primary and secondary coils."
@@ -32,13 +32,11 @@
         "answer": "A relay is an electrically operated switch that uses an electromagnet to mechanically operate a switch. It allows a circuit to be controlled by a low-power signal or by several circuits to be controlled by one signal."
     },
     {
-        "question": "What does '
-
-"Grounding" or "earthing" mean in electrical systems?",
+        "question": "What does \"Grounding\" or \"earthing\" mean in electrical systems?",
         "answer": "Grounding or earthing in electrical systems refers to the practice of connecting parts of an electrical circuit to the ground, providing a safe path for excess current to dissipate into the earth, which helps prevent electric shock, fire, and other hazards."
     },
     {
         "question": "What is the significance of Kirchhoff's Circuit Laws?",
         "answer": "Kirchhoff's Circuit Laws, comprising the Current Law and the Voltage Law, are fundamental in electrical engineering. The Current Law states that the total current entering a junction equals the total current leaving it. The Voltage Law states that the total voltage around a closed loop is equal to the sum of all the voltage drops in that loop."
     }
-]
+]}
